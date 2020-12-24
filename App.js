@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 import { createAppContainer } from "react-navigation";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 
-import TransactionScreen from "./screens/BookTransactionScreen";
-import SearchScreen from "./screens/SearchScreen";
+import TransactionScreen from "./screens/scannerScreen";
+
 
 export default class App extends React.Component {
   render() {
@@ -14,7 +14,6 @@ export default class App extends React.Component {
 
 const TabNavigator = createBottomTabNavigator({
   Transaction: { screen: TransactionScreen },
-  Search: { screen: SearchScreen }
 });
 
 const AppContainer = createAppContainer(TabNavigator);
